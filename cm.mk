@@ -21,9 +21,6 @@ $(call inherit-product, device/samsung/serranodsdd/device.mk)
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-# Also get non-open-source specific aspects
-$(call inherit-product, vendor/samsung/serrano-common/serrano-common-vendor.mk)
-
 PRODUCT_NAME := cm_serranodsdd
 PRODUCT_DEVICE := serranodsdd
 PRODUCT_BRAND := samsung
