@@ -574,20 +574,6 @@ public class SerranoDSRIL extends RIL implements CommandsInterface {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void setDataAllowed(boolean allowed, Message result) {
-        riljLog("setDataAllowed: not supported");
-        if (result != null) {
-            CommandException ex = new CommandException(
-                CommandException.Error.REQUEST_NOT_SUPPORTED);
-            AsyncResult.forMessage(result, null, ex);
-            result.sendToTarget();
-        }
-    }
-
     @Override
     public void startLceService(int reportIntervalMs, boolean pullMode, Message response) {
         riljLog("startLceService: not supported");
